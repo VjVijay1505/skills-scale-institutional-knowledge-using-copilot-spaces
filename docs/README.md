@@ -20,6 +20,20 @@ OctoAcme projects follow a structured lifecycle:
 - **Data-informed decisions**: Measure impact and iterate based on evidence
 - **Psychological safety**: Encourage feedback and continuous learning
 
+## OctoAcme Project Management Process Summary
+
+### Lifecycle and Core Workflows
+
+OctoAcme follows a structured five-phase project lifecycle: **Initiation**, **Planning**, **Execution**, **Release**, and **Close & Retrospective**. The Initiation phase validates business need and stakeholder alignment through a lightweight Project One-pager that captures the problem statement, objectives, success metrics, and initial resource requirements. Once approved, the Planning phase breaks work into shippable increments using a prioritized backlog with clear acceptance criteria, estimates, and a documented Definition of Done. Execution is managed through iterative delivery cycles using GitHub Projects with columns (Backlog, Ready, In Progress, In Review, QA, Done), supported by daily standups, weekly delivery syncs, and small pull requests (≤400 lines) that require at least one approval and passing CI before merge. This iterative approach ensures continuous value delivery and early risk detection.
+
+### Roles, Responsibilities, and Communication
+
+OctoAcme emphasizes **clear ownership** with three core roles: **Project Managers** coordinate schedules, risks, and cross-team communication; **Product Managers** define outcomes, prioritize the backlog, and measure success; and **Developers** implement features while contributing to design, testing, and risk identification. The communication cadence is frequent and structured—weekly syncs between PM and Product Lead, twice-weekly standups for delivery teams, and monthly stakeholder updates—with a clear escalation path (Team → PM → Product Lead → Sponsor) for blockers. This multi-level communication ensures transparency, prevents silos, and maintains alignment across engineering, product, and stakeholder groups.
+
+### Quality Assurance and Risk Management
+
+Quality is embedded throughout OctoAcme's execution cycle through **unit tests, integration tests, and end-to-end smoke tests** for critical flows, along with security scanning in CI and manual QA for feature acceptance. The process maintains a **Risk Register** that tracks risk ID, description, impact/likelihood, owner, and mitigation plan, reviewed weekly during syncs. Deployment follows a rigorous checklist including passing CI, security scans, smoke testing in staging, and a documented rollback plan before production release. Post-release, teams conduct blameless retrospectives to capture learnings and convert them into actionable improvements, ensuring continuous refinement of processes and practices.
+
 ## Process Documents
 
 ### [Project Management Overview](octoacme-project-management-overview.md)
